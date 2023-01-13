@@ -12,19 +12,23 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>None</DebugType>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Piano\Controls\Key.xaml" />
+    <None Remove="Piano\Views\MainPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Piano\Controls\Key.xaml" />
+    <EmbeddedResource Include="Piano\Views\MainPage.xaml" />
+  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="lib\" />
     <Folder Include="res\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Piano\Piano.csproj" />
-  </ItemGroup>
-
 
   <ItemGroup>
-    <PackageReference Update="Tizen.NET" Version="11.0.0.17614">
+    <PackageReference Include="Tizen.NET" Version="11.0.0.17614">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
