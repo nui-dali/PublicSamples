@@ -28,7 +28,7 @@ namespace BasicCalculator.Tizen.Mobile
         private readonly string[] _keyList = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" };
 
         /// <summary>
-        /// Loads Xamarin application.
+        /// Loads NUI application.
         /// </summary>
         protected override void OnCreate()
         {

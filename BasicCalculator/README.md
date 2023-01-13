@@ -14,4 +14,4 @@ with basic mathematical operations using NUI Xaml library.
 * [Visual Studio Tools for Tizen](https://docs.tizen.org/application/vstools/install) - Visual Studio plugin for Tizen .NET application development
 
 ### Author
-* Bartłomiej Uliasz
+* Guowei Wang
