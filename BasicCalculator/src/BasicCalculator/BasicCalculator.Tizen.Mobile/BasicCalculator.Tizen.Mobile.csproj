@@ -25,13 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BasicCalculator\BasicCalculator.csproj">
-      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
-    </ProjectReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Tizen.NET" Version="11.0.0.17605">
+    <PackageReference Include="Tizen.NET" Version="11.0.0.17614">
 	  <ExcludeAssets>Runtime</ExcludeAssets>
     </PackageReference>
   </ItemGroup>
