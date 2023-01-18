@@ -21,8 +21,6 @@ using Tizen.Applications;
 using Tizen.Multimedia;
 using Tizen.NUI.Binding;
 
-[assembly: Dependency(typeof(SoundService))]
-
 namespace Piano.Tizen.Mobile.Services
 {
     /// <summary>

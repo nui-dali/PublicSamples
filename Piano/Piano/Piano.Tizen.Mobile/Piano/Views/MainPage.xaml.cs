@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+using Tizen.NUI;
 using Tizen.NUI.BaseComponents;
 
 namespace Piano.Views
