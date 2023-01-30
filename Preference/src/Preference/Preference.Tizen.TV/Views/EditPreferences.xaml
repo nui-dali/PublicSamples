@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://tizen.org/Tizen.NUI/2018/XAML"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Preference.TV.Views.EditPreferences"
+             WidthSpecification="{Static LayoutParamPolicies.MatchParent}" 
+             HeightSpecification="{Static LayoutParamPolicies.MatchParent}">
+
+    <ContentPage.Content>
+        <View WidthSpecification="{Static LayoutParamPolicies.MatchParent}" 
+             HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+             BackgroundColor="Black">
+            <View.Layout>
+                <LinearLayout LinearOrientation="Vertical" />
+            </View.Layout>
+
+            <TextLabel x:Name="title" 
+                       WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+                       HeightSpecification="250"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Text="Edit Preferences" 
+                       TextColor="White" 
+                       PointSize="25" 
+                       BackgroundColor="Black" />
+
+            <View WidthSpecification="{Static LayoutParamPolicies.MatchParent}" 
+                  HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+                  Margin="20,20,0,0">
+                <View.Layout>
+                    <LinearLayout LinearOrientation="Vertical" />
+                </View.Layout>
+                <TextEditor PlaceholderText="Name" 
+                            Text="{Binding NameValue, Mode=TwoWay}"
+                            TextColor="255,255,255,255"
+                            WidthSpecification="{Static LayoutParamPolicies.MatchParent}" 
+                            HeightSpecification="100"
+                            BackgroundColor="Black"/>
+                <TextEditor PlaceholderText="Surname"
+                            Text="{Binding SurnameValue, Mode=TwoWay}"
+                            TextColor="255,255,255,255"
+                            WidthSpecification="{Static LayoutParamPolicies.MatchParent}" 
+                            HeightSpecification="100"
+                            BackgroundColor="Black"/>
+                <TextEditor PlaceholderText="Age"
+                            Text="{Binding AgeValue, Mode=TwoWay}"
+                            TextColor="255,255,255,255"
+                            WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+                            HeightSpecification="100"
+                            BackgroundColor="Black"/>
+                <TextEditor PlaceholderText="Height (in meters)"
+                            Text="{Binding HeightValue, Mode=TwoWay}"
+                            TextColor="255,255,255,255"
+                            WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+                            HeightSpecification="100"
+                            BackgroundColor="Black"/>
+
+                <View WidthSpecification="{Static LayoutParamPolicies.MatchParent}" 
+                        HeightSpecification="{Static LayoutParamPolicies.MatchParent}" BackgroundColor="Black" >
+                    <View.Layout>
+                        <LinearLayout LinearOrientation="Horizontal" />
+                    </View.Layout>
+                    <TextLabel WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+                       HeightSpecification="100"
+                       Text="C++" 
+                       TextColor="White" 
+                       PointSize="25" 
+                       BackgroundColor="Black" />
+                    <CheckBox Margin="300,0,0,0"/>
+                </View>
+
+                <View WidthSpecification="{Static LayoutParamPolicies.MatchParent}" 
+             HeightSpecification="{Static LayoutParamPolicies.MatchParent}" BackgroundColor="Black" >
+                    <View.Layout>
+                        <LinearLayout LinearOrientation="Horizontal" />
+                    </View.Layout>
+                    <TextLabel WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+                       HeightSpecification="100"
+                       Text="C#" 
+                       TextColor="White" 
+                       PointSize="25" 
+                       BackgroundColor="Black" />
+                    <CheckBox  Margin="300,0,0,0"/>
+                </View>
+
+                <View WidthSpecification="{Static LayoutParamPolicies.MatchParent}" 
+             HeightSpecification="{Static LayoutParamPolicies.MatchParent}" BackgroundColor="Black" >
+                    <View.Layout>
+                        <LinearLayout LinearOrientation="Horizontal" />
+                    </View.Layout>
+                    <TextLabel WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+                       HeightSpecification="100"
+                       Text="Java" 
+                       TextColor="White" 
+                       PointSize="25" 
+                       BackgroundColor="Black" />
+                    <CheckBox  Margin="300,0,0,0"/>
+                </View>
+            </View>
+
+            <Button Text="Save" 
+                    Command="{Binding SaveRequestCommand}"
+                    WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+                    TextColor="White"
+                    BackgroundColor="0,0,0,255"/>
+            
+        </View>
+    </ContentPage.Content>
+</ContentPage>
